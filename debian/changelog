@@ -1,5 +1,65 @@
-template-repository (1.0-1) unstable; urgency=medium
+waypipe (0.8.6-1) unstable; urgency=medium
 
-  * Initial release
+  [ Gard Spreemann ]
+  * New upstream version.
+  * Drop memory leak patch, now in place upstream.
+  * Standards-version 4.6.2.0, no changes needed.
 
- -- Tsic404 <liuheng@deepin.org>  Sat, 28 Jan 2023 13:46:49 +0800
+  [ Debian Janitor ]
+  * Set upstream metadata fields.
+
+ -- Gard Spreemann <gspr@nonempty.org>  Thu, 08 Jun 2023 11:31:54 +0200
+
+waypipe (0.8.4-3) unstable; urgency=medium
+
+  * Add upstream patch to fix memory leak. (Closes: #1034163)
+
+ -- Gard Spreemann <gspr@nonempty.org>  Mon, 10 Apr 2023 15:51:36 +0200
+
+waypipe (0.8.4-2) unstable; urgency=medium
+
+  * Increase timeout limit for build-time tests. (Closes: #1011322)
+
+ -- Gard Spreemann <gspr@nonempty.org>  Wed, 23 Nov 2022 17:11:16 +0100
+
+waypipe (0.8.4-1) unstable; urgency=medium
+
+  * New upstream version.
+
+ -- Gard Spreemann <gspr@nonempty.org>  Sun, 30 Oct 2022 14:52:41 +0100
+
+waypipe (0.8.3-1) unstable; urgency=medium
+
+  * New upstream version.
+  * Re-enable build-time tests on mipsel and mips64el, fixed upstream.
+  * Standards-version 4.6.1.0, no changes needed.
+
+ -- Gard Spreemann <gspr@nonempty.org>  Mon, 08 Aug 2022 17:02:52 +0200
+
+waypipe (0.8.2-3) unstable; urgency=medium
+
+  * Temporarily disable build-time tests on mipsel and mips64el. One test
+    fails on these architectures, but the program seems functional.
+
+ -- Gard Spreemann <gspr@nonempty.org>  Wed, 01 Dec 2021 16:39:26 +0100
+
+waypipe (0.8.2-2) unstable; urgency=medium
+
+  * Correct typo in architecture variables so as to actually build with
+    SIMD capabilities.
+
+ -- Gard Spreemann <gspr@nonempty.org>  Mon, 29 Nov 2021 09:10:58 +0100
+
+waypipe (0.8.2-1) unstable; urgency=medium
+
+  * New upstream version.
+  * Add watch file.
+  * Build with all SIMD capabilities for run-time detection.
+
+ -- Gard Spreemann <gspr@nonempty.org>  Sun, 28 Nov 2021 23:29:08 +0100
+
+waypipe (0.8.1-1) unstable; urgency=medium
+
+  * Initial release. (Closes: #939405)
+
+ -- Gard Spreemann <gspr@nonempty.org>  Fri, 29 Oct 2021 16:02:23 +0200
