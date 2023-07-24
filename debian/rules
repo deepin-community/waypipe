@@ -1,4 +1,20 @@
 #!/usr/bin/make -f
 
+export DEB_BUILD_MAINT_OPTIONS = hardening=+all
+
+include /usr/share/dpkg/architecture.mk
+
 %:
 	dh $@
+
+override_dh_auto_configure:
+ifeq ($(DEB_HOST_ARCH), amd64)
+	dh_auto_configure -- -Dwith_avx2=true  -Dwith_avx512f=true  -Dwith_neon_opts=false -Dwith_sse3=true
+else ifeq ($(DEB_HOST_ARCH), arm64)
+	dh_auto_configure -- -Dwith_avx2=false -Dwith_avx512f=false -Dwith_neon_opts=true  -Dwith_sse3=false
+else
+	dh_auto_configure -- -Dwith_avx2=false -Dwith_avx512f=false -Dwith_neon_opts=false -Dwith_sse3=false
+endif
+
+override_dh_auto_test:
+	dh_auto_test -- --timeout-multiplier 10

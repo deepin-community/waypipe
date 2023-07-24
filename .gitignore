@@ -1,0 +1,8 @@
+waypipe
+build/
+Doxyfile
+html
+latex
+doc
+test/matrix
+/build-minimal/

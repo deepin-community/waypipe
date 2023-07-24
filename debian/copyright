@@ -1,22 +1,100 @@
 Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
-Upstream-Name: template-repository
-Source: https://github.com/deepin-community/template-repository
+Upstream-Name: waypipe
+Source: https://gitlab.freedesktop.org/mstoeckl/waypipe/
+License: Expat
 
 Files: *
-Copyright: 2023 Tsic404 <liuheng@deepin.org>
-License: GPL-2+
- This package is free software; you can redistribute it and/or modify
- it under the terms of the GNU General Public License as published by
- the Free Software Foundation; either version 2 of the License, or
- (at your option) any later version.
+Copyright: 2019-2022 Manuel Stoeckl
+License: Expat
+
+Files: protocols/gtk-primary-selection.xml
+       protocols/primary-selection-unstable-v1.xml
+Copyright: 2015-2016 Red Hat
+License: Expat
+
+Files: protocols/input-method-unstable-v2.xml
+Copyright: 2008-2011 Kristian Høgsberg
+           2010-2011 Intel Corporation
+           2012-2013 Collabora, Ltd.
+           2012-2013 Intel Corporation
+           2015-2016 Jan Arne Petersen
+           2017-2018 Red Hat, Inc.
+           2018       Purism SPC
+License: Expat
+
+Files: protocols/linux-dmabuf-unstable-v1.xml
+       protocols/presentation-time.xml
+Copyright: 2013-2015 Collabora, Ltd.
+License: Expat
+
+Files: protocols/virtual-keyboard-unstable-v1.xml
+Copyright: 2008-2011 Kristian Høgsberg
+           2010-2013 Intel Corporation
+           2012-2013 Collabora, Ltd.
+           2018      Purism SPC
+License: Expat
+
+Files: protocols/wayland-drm.xml
+Copyright: 2008-2011 Kristian Høgsberg
+           2010-2011 Intel Corporation
+License: Expat
+
+Files: protocols/wayland.xml
+Copyright: 2008-2011 Kristian Høgsberg
+           2010-2011 Intel Corporation
+           2012-2013 Collabora, Ltd.
+License: Expat
+
+Files: protocols/wlr-data-control-unstable-v1.xml
+Copyright: 2018 Simon Ser
+           2019 Ivan Molodetskikh
+License: Expat
+
+Files: protocols/wlr-export-dmabuf-unstable-v1.xml
+Copyright: 2018 Rostislav Pehlivanov
+License: Expat
+
+Files: protocols/wlr-gamma-control-unstable-v1.xml
+Copyright: 2015 Giulio camuffo
+           2018 Simon Ser
+License: Expat
+
+Files: protocols/wlr-screencopy-unstable-v1.xml
+Copyright: 2018 Simon Ser
+           2019 Andri Yngvason
+License: Expat
+
+Files: protocols/xdg-shell.xml
+Copyright: 2008-2013 Kristian Høgsberg
+           2013      Rafael Antognolli
+           2013      Jasper St. Pierre
+           2010-2013 Intel Corporation
+           2015-2017 Samsung Electronics Co., Ltd
+           2015-2017 Red Hat Inc.
+License: Expat
+
+Files: debian/*
+Copyright: 2021-2022 Gard Spreemann <gspr@nonempty.org>
+License: Expat
+
+License: Expat
+ Permission is hereby granted, free of charge, to any person obtaining a
+ copy of this software and associated documentation files (the "Software"),
+ to deal in the Software without restriction, including without limitation
+ the rights to use, copy, modify, merge, publish, distribute, sublicense,
+ and/or sell copies of the Software, and to permit persons to whom the
+ Software is furnished to do so, subject to the following conditions:
  .
- This package is distributed in the hope that it will be useful,
- but WITHOUT ANY WARRANTY; without even the implied warranty of
- MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- GNU General Public License for more details.
+ The above copyright notice and this permission notice (including the next
+ paragraph) shall be included in all copies or substantial portions of the
+ Software.
  .
- You should have received a copy of the GNU General Public License
- along with this program. If not, see <https://www.gnu.org/licenses/>
- .
- On Debian systems, the complete text of the GNU General
- Public License version 2 can be found in "/usr/share/common-licenses/GPL-2".
+ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.  IN NO EVENT SHALL
+ THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+ FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
+ DEALINGS IN THE SOFTWARE.
+
+
